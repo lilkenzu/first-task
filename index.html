@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+    <title>Менеджер материалов</title>
+</head>
+<script src="script.js"></script>
+<body class="bg-slate-200 font-sans">
+    <div class="flex justify-content-center flex-wrap w-full h-screen ">
+        
+        <aside class="w-3/12 fixed left-0 top-0 bg-white rounded-tr-lg p-3 h-screen  shadow xl">
+            
+            <h4 class="text-lg text-center p-4 font-semibold">Выбор сайта</h4>
+            
+                <ul class="space-y-2 text-md font-mono">
+                
+                <li>
+                    <a href="#" class="flex items-center m-3 text-gray-700 rounded-md hover:bg-gray-200 focus:shadow-outline ">
+                        <span class="m-3">Сайт</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="site.html" class="flex items-center m-3 text-gray-800 rounded-md hover:bg-gray-200 focus:shadow-outline">
+                        <span class="m-3">Сайт 1</span>
+                    </a>
+                </li>
+                <li>
+                    <a href="site2.html" class="flex items-center m-3 text-gray-800 rounded-md hover:bg-gray-200 focus:shadow-outline">
+                        <span class="m-3">Сайт 2</span>
+                    </a>
+                </li>
+                
+                </ul>
+           
+            
+        
+        </aside>
+
+        <main class="w-9/12 absolute inset-y-0 right-0 w-16">
+            <div class="container mx-auto m-2 ">
+                <h4 class="text-lg text-center p-6 font-semibold">Список статей</h4>
+            </div>
+            
+            <ul class="content">
+            <ul class="flex flex-col gap-6 m-7 ">
+                <div class="options">
+                <li class="border-2 border-black p-3 rounded-md hover:shadow-xl hover:duration-500 text-wrap">
+                    <h1 class="text-xl p-1 font-semibold">Что такое тонна?</h1>
+                    <p class="text-left p-2">То́нна (фр. tonne от ср.-век.лат. tunna «бочка») — название некоторых единиц измерения массы и объёма.
+
+                        Тонна (метрическая тонна) — единица измерения массы, равная 1000 килограммов[1]. Русское обозначение: т; международное: t. В Российской Федерации допущена к использованию наряду с единицами Международной системы единиц (СИ) без ограничения срока и области применения[2]. Единица массы и одна из основных единиц в системе МТС. Метрическая тонна равна массе одного кубического метра чистой воды; при 4 °С тысяча литров чистой воды имеет абсолютную массу равной одной тонне.
+                        Американская тонна (короткая тонна) = 907,18474 килограмма.
+                        Английская тонна (длинная тонна) = 1016,0469088 килограмма[3]. Закон Великобритании о мерах и весах 1985 года исключил из обихода для торговли некоторые единицы измерения, включая тонну. Исключение было сделано для товаров, которые были взвешены или сертифицированы до 1 декабря 1980 года, при условии что покупателю было известно, что вес предмета измерялся в прежних единицах измерения[4][5].
+                        Регистровая тонна — единица, которой в судоходстве измеряют объём помещения для полезного груза — 2,83 м³.
+                        Фрахтовая тонна — единица измерения размера фрахта. Для тяжёлых и компактных грузов равна 1016,0469088 кг, а для лёгких и объёмных грузов — 1,12 м³.
+                    </p>
+                    
+                    <div class="flex justify-end     flew-row gap-x-3 p-3">
+                    <button id="btn1" onclick="myFunc()" class="bg-transparent hover:bg-green-500 text-green-700  hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded hover:shadow-md" >
+                        OK
+                      </button>
+                    
+                      <button id="btnh" class="bg-transparent hover:bg-red-500 text-red-700  hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded hover:shadow-md" name="btn">
+                        Убрать
+                      </button>
+                    </div>
+                </div>
+                <div class="options1">
+                </li>
+                <li class="border-2 border-black  p-3 rounded-md hover:shadow-xl hover:duration-500">
+
+                    <h1 class="text-xl p-1 font-semibold">Что?</h1>
+                    <p class="p-2">
+                        Научная статья — законченное авторское произведение, описывающее результаты оригинального научного исследования (первичная научная статья) или посвящённая рассмотрению ранее опубликованных научных статей, связанных общей темой (обзорная научная статья). В первичных научных статьях авторами излагается существенная информация о проведённом исследовании в форме, позволяющей другим членам научного сообщества оценить исследование, воспроизвести эксперименты, а также оценить рассуждения и сделанные из них выводы. Обзорные научные статьи предназначены для обобщения, анализа, оценки, суммирования или синтеза ранее опубликованной информации (первичных научных публикаций). Нередко научная статья сочетает в себе эти два типа научных текстов, включая обзорную и оригинальную части.
+
+В настоящее время основным представлением для научной статьи является печатная форма. Эта ситуация постепенно меняется – некоторые издательства наряду с выпуском печатного номера журнала выкладывают тексты опубликованных научных статей в интернет в свободный доступ. Однако в большинстве случаев это делается для подписчиков или на платной основе, что означает фактическое отсутствие статей в интернете и затрудняет поиск научной информации для исследователя.
+                    </p>
+
+
+
+                    <div class="flex justify-end     flew-row gap-x-3 p-3">
+                        <button onclick="myFunc()" id="btn" class="bg-transparent hover:bg-green-500 text-green-700  hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded hover:shadow-md">
+                            OK
+                          </button>
+                          <button id="btnh1" class="bg-transparent hover:bg-red-500 text-red-700  hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded hover:shadow-md  ">
+                            Убрать
+                          </button>
+                        </div>
+                    
+                </li> 
+                </div>
+                <div class="options2">
+                <li class="border-2 border-black  p-3 rounded-md hover:shadow-xl hover:duration-500">
+                    <h1 class="text-xl p-1 font-semibold">Каратэ</h2>
+                <p class="text-left p-1">
+                    «Время не трать даром - молод ты или стар, Учись ударом отвечать на удар. Пусть крепче булатной стали будет твоя рука, Чтобы зря враги уповали на мощь стального клинка!» это цитата из трактата по Окинава-тэ, датированного ещё ХVIII веком.
+
+Каратэ считается боевым искусством Японии. Но, на самом деле до 1916 года его использовали лишь на Окинаве для безоружной защиты от нападения японцев. Попав в Японию, им сначала заинтересовались переселенцы из Китая. В ХХ веке, уже в присоединенной к японским землям Окинаве наступили тяжелые времена. Cпасаясь от кризиса, люди, в поиске работы, переезжали в другие провинции Японии, при этом они везли с собой и искусство «жить и умирать» (так говорят о каратэ).
+
+Широкое распространение не только в Японии, но и по всему миру этот вид единоборства получил благодаря центрам обучения при университетах на территории страны «восходящего Солнца». Для того чтобы обучить студентов основам всего за несколько лет, проведенных в высшем учебном заведении, программу каратэ существенно сократили. Именно такая облегченная версия боевого искусства заинтересовала и жителей западных стран.
+                </p>
+
+                    <div class="flex justify-end     flew-row gap-x-3 p-3">
+                        <button onclick="myFunc()" id="btn2" class="bg-transparent hover:bg-green-500 text-green-700  hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded hover:shadow-md">
+                            OK
+                          </button>
+                          <button id="btnh2" class="bg-transparent hover:bg-red-500 text-red-700  hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded hover:shadow-md  ">
+                            Убрать
+                          </button>
+                        </div>
+                
+                </li>
+                </div>
+                <div class="options3">
+                <li class="border-2 border-black  p-3 rounded-md hover:shadow-xl hover:duration-500">
+                    <h1 class="text-xl p-1 font-semibold">
+                            Баскетбол
+                    </h1>
+
+                    <p class="text-left p-1">
+                        Упоминание об игре похожей на баскетбол встречается даже у древних майя. Называлась эта игра «пок-та-пок», корзины высекали прямо в камнях, а мяч делали из каучука. Единственный минус этой игры, на современный взгляд, – это приношение в жертву команду победителей (для последующей игры с богами). История современного баскетбола начинается с конца XIX века в штате Массачусетс. Ее автором стал Джеймс Нэйсмит. Эта игра стала быстро распространяться среди школьников и студентов, и уже в 1986 году прошел первый матч среди профессионалов. После этого стали появляться команды за рубежом и различные ассоциации. Одна из наиболее знаменитых сейчас НБА возникла после Второй мировой войны в июне 1946 года. С1936 года этот вид спорта включили в программу летних Олимпийских игр.
+                    </p>
+
+
+                    <div class="flex justify-end     flew-row gap-x-3 p-3">
+                        <button onclick="myFunc()" id="btn3" class="bg-transparent hover:bg-green-500 text-green-700  hover:text-white py-2 px-4 border border-green-500 hover:border-transparent rounded hover:shadow-md">
+                            OK
+                          </button>
+                          <button id="btnh3" class="bg-transparent hover:bg-red-500 text-red-700  hover:text-white py-2 px-4 border border-red-500 hover:border-transparent rounded hover:shadow-md  ">
+                            Убрать
+                          </button>
+                        </div>
+                </li>
+            </div>
+                </ul>
+            </ul>
+            
+        </main>
+    
+    </div>
+
+   
+
+
+
+
+</body>
+</html>
